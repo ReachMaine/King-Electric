@@ -1,0 +1,78 @@
+/*
+Theme Name:     King Electric
+Description:    Child theme for the Buildpress
+Author:         Reach Maine
+Template:       buildpress
+Version:        1.0
+*/
+/* add custom CSS code bellow */
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+  content: url("images/reach-favicon.png");
+  padding-right: 3px; }
+
+.jumbotron__content p, p, li {
+  font-size: 16px;
+  line-height: normal; }
+
+.logo {
+  padding-top: 15px; }
+
+/* jumbotron stuff */
+.jumbotron {
+  background-color: #343434; }
+  .jumbotron .jumbotron__category {
+    display: none;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    visibility: hidden; }
+  .jumbotron .carousel-content {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    left: initial;
+    right: initial;
+    text-align: center; }
+
+.testimonial__rating {
+  display: none;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  visibility: hidden; }
+
+#pgc-511-5-0 {
+  padding-top: 20px; }
+
+/*** footer ****/
+/*** top footer Contact Us bar ***/
+#footertop {
+  width: 100%;
+  background-color: #454545;
+  color: white; }
+
+#footertop h1 {
+  color: white; }
+
+#footertop .btn {
+  margin-bottom: 18px; }
+
+.footer__headings {
+  font-size: 18px; }
+
+/* ----  Media Settings --------------------------------- */
+@media (max-width: 776px) {
+  .hide-mobile {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    margin: 0px; } }
+/* end Media Settings ------------------------------------------ */

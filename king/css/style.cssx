@@ -1,0 +1,14 @@
+/*
+Theme Name:     King Electric
+Description:    Child theme for the Buildpress
+Author:         Reach Maine
+Template:       buildpress
+Version:        1.0
+*/
+
+
+/* add custom CSS code bellow */
+
+.logo {
+padding-top: 20px;
+}
