@@ -51,6 +51,9 @@ Version:        1.0
   padding-top: 20px; }
 
 /*** footer ****/
+.footer-bottom__left {
+  font-weight: bold; }
+
 /*** top footer Contact Us bar ***/
 #footertop {
   width: 100%;
