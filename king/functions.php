@@ -5,9 +5,9 @@ function enqueue_parent_theme_style() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 
-	// contact form 7 fallback for date field 
+	// contact form 7 fallback for date field
 	add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
-	
+
 	/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
 		<style type="text/css">
@@ -40,7 +40,7 @@ function enqueue_parent_theme_style() {
 	function add_favicon() {
 	  	$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.png';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
+	}
 
 		/*****  after theme setup  ****/
 	add_action('after_setup_theme', 'reach_setup');
@@ -55,7 +55,7 @@ function enqueue_parent_theme_style() {
 
 	}
 
-	
+
 	add_filter('wpseo_opengraph_image_size', 'mysite_opengraph_image_size');
 	function mysite_opengraph_image_size($val) {
 		return 'facebook_share';
@@ -80,6 +80,11 @@ function enqueue_parent_theme_style() {
 			'after_widget'  => '</aside>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
-			)); 
-		} //function_exists('register_sidebar')	
+			));
+		} //function_exists('register_sidebar')
 	}
+
+    add_filter ('buildpress/footer_left_txt', 'allow_footer_shortcodes');
+    function allow_footer_shortcodes($intext) {
+        return do_shortcode($intext);
+    }
